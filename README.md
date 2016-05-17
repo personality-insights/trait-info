@@ -1,4 +1,4 @@
-# Descriptions for Personality Insights Traits
+# Additional Information for Personality Insights Traits
 ![last-release](https://img.shields.io/github/tag/personality-insights/trait-info.svg)
 [![npm-version](https://img.shields.io/npm/v/personality-trait-info.svg)](https://www.npmjs.com/package/personality-trait-info)
 [![npm-license](https://img.shields.io/npm/l/personality-trait-info.svg)](https://www.npmjs.com/package/personality-trait-info)
