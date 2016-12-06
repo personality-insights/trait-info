@@ -27,9 +27,9 @@ $ npm install personality-trait-info
   var big5AgreeablenessDescription  = traitInfo.description('big5_agreeableness');
   var big5AgreeablenessInfo  = traitInfo.info('big5_agreeableness');
 
-  console.log('The trait information for trait id big5_agreeableness is: ' +
+  console.log('The trait information for trait id big5_agreeableness is: \n' +
   'name: ' + big5AgreeablenessName + ' description: ' + big5AgreeablenessDescription +
-  ' info: ' + big5AgreeablenessInfo;
+  ' info: ' + big5AgreeablenessInfo);
   ```
 
 ## License
