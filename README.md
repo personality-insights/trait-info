@@ -8,28 +8,41 @@
 
 Obtain descriptions for Personality Insights' traits.
 
-## Getting Started
+## Installation
 
-1. Require and instance `personality-trait-info` component
+```sh
+$ npm install personality-trait-info
+```
 
-  ```JavaScript
-  const PersonalityTraitInfo = require('personality-trait-info');
-  const traitInfo = new PersonalityTraitInfo({ locale: 'es' });
+## Usage
+
+```JavaScript
+  var PersonalityTraitInfo = require('personality-trait-info');
+
+  // version refers to the version of Watson Personality Insights to use, v2 or v3
+  var traitInfo = new PersonalityTraitInfo({ locale: 'es', version: 'v3' });
+
+  // retrieve the trait description, name and info for a specified trait id (e.g., 'big5_agreeableness')
+  var big5AgreeablenessName  = traitInfo.name('big5_agreeableness');
+  var big5AgreeablenessDescription  = traitInfo.description('big5_agreeableness');
+  var big5AgreeablenessInfo  = traitInfo.info('big5_agreeableness');
+
+  console.log('The trait information for trait id big5_agreeableness is: ' +
+  'name: ' + big5AgreeablenessName + ' description: ' + big5AgreeablenessDescription +
+  ' info: ' + big5AgreeablenessInfo;
   ```
 
-2. Get your trait information
+## License
 
-  ```JavaScript
-  const opennessDescription  = traitInfo.description('Openness');
-  const opennessName  = traitInfo.name('Structure');
-  const opennessInfo  = traitInfo.info('Hedonism');
-  ```
+  This library is licensed under Apache 2.0. Full license text is
+  available in [LICENSE](LICENSE).
 
-3. Render descriptions somewhere! Try rendering them as cards!
+## Changelog
 
-See the complete [example code][example_code] or [try it live][live_example]
+  __12-01-2016__
+   * Added v3 descriptions
 
-## More Features
+## More Features???
 
 There are more features available such as:
 
@@ -41,24 +54,3 @@ global variable `PersonalityTraitInfo`.
 const traitInfo   = new PersonalityTraitInfo({ format:'html' });
 const hedonismDescription = traitInfo.description('Hedonism');
 ```
-
-## API Methods
-
-The available methods are the following ones:
-  - `constructor :: (Options) -> PersonalityTraitDescriptions` - Obtain an instance of `PersonalityTraitDescriptions`.
-  - `description :: (TraitID) -> String` - Obtain description for the given `TraitID`.
-  - `name :: (TraitID) -> String` - Obtain the name for the given `TraitID`.
-  - `info :: (TraitID) -> TraitInfo` - Obtain the `TraitInfo` for the given `TraitID`.
-
-Definitions:
- - `TraitID` is a `String` ID from IBM Watson Personality Insights traits.
- - `TraitInfo` is an `Object` with fields:
-  - `id` - The `TraitID`.
-  - `name` - The name of the trait.
-  - `description` - The description of the trait.
- - `Options` are options for the trait descriptions component. Available options are:
-   - `locale` - A `String` with the locale used to generate the labels.
-   - `format` - A `String` with format. Available formats are `["plain", "html", "markdown"]`.
-
- [example_code]: https://github.com/personality-insights/trait-info/blob/master/examples/example.html
- [live_example]: https://rawgit.com/personality-insights/trait-info/master/examples/example.html
