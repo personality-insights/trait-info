@@ -6,7 +6,7 @@
 [![codecov.io](https://codecov.io/github/personality-insights/trait-info/coverage.svg?branch=master)](https://codecov.io/github/personality-insights/trait-info?branch=master)
 [![npm-downloads](https://img.shields.io/npm/dm/personality-trait-info.svg)](https://www.npmjs.com/package/personality-trait-info)
 
-Obtain descriptions for Personality Insights' traits.
+Obtain info for Personality Insights' traits.
 
 ## Installation
 
@@ -40,17 +40,4 @@ $ npm install personality-trait-info
 ## Changelog
 
   __12-01-2016__
-   * Added v3 descriptions
-
-## More Features???
-
-There are more features available such as:
-
-- Including the component as a browser script. Component will be exported as the
-global variable `PersonalityTraitInfo`.
-
-- Formatting information in html or markdown optionally!
-```JavaScript
-const traitInfo   = new PersonalityTraitInfo({ format:'html' });
-const hedonismDescription = traitInfo.description('Hedonism');
-```
+   * Added v3 traits
