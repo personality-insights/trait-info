@@ -18,11 +18,8 @@
 
 const Names = require('personality-trait-names');
 const Descriptions = require('personality-trait-descriptions');
-const _ = require('underscore');
-const extend = _.extend;
 
-
-module.exports = class {
+class PersonalityTraitInfo {
 
   constructor(options) {
     this._names = new Names(options);
@@ -31,6 +28,10 @@ module.exports = class {
 
   description(traitId) {
     return this._descriptions.description(traitId);
+  }
+
+  descriptions(traitId) {
+    return this._descriptions.descriptions(traitId);
   }
 
   name(traitId) {
@@ -48,5 +49,6 @@ module.exports = class {
       description : this.description(traitId)
     };
   }
+}
 
-};
+module.exports = PersonalityTraitInfo;
