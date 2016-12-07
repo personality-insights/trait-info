@@ -31,7 +31,7 @@ class PersonalityTraitInfo {
   }
 
   descriptions(traitId) {
-    return this._descriptions.description(traitId);
+    return this._descriptions.descriptions(traitId);
   }
 
   name(traitId) {
