@@ -17,7 +17,7 @@
 'use strict';
 
 const assert = require('chai').assert;
-const PersonalityTraitInfo  = require('../src/index');
+const PersonalityTraitInfo  = require('../lib/index');
 
 describe('info', () => {
 
