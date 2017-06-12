@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/personality-insights/trait-info#readme",
   "dependencies": {
-    "personality-trait-descriptions": "^2.0.4",
+    "personality-trait-descriptions": "^2.0.5",
     "personality-trait-names": "^2.0.5",
     "underscore": "^1.8.3"
   },
