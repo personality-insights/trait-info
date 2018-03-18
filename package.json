@@ -1,6 +1,6 @@
 {
   "name": "personality-trait-info",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "Obtain additional information for IBM Watson Personality Insights traits",
   "main": "lib/index.js",
   "scripts": {
